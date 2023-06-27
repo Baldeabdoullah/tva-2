@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TVA</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="vat-calc">
+      <h2>Calcul de TVA</h2>
+      <div class="main-wrapper">
+        <form action="">
+          <div>
+            <label for="net-price">Pix net</label>
+            <input type="text" id="net-price" placeholder="0.00" />
+          </div>
+
+          <div>
+            <label for="vat-rate">Taux de TVA (%)</label>
+            <input type="text" id="vat-rate" placeholder="0.00" />
+          </div>
+
+          <div>
+            <label for="inc-amount">Prix incluant la TVA</label>
+            <input
+              type="text"
+              id="inc-amount"
+              placeholder="0.00"
+              disabled="true"
+            />
+          </div>
+        </form>
+      </div>
+
+      <button type="button" class="main-btn" id="calc-btn">Calculer</button>
+
+    <button type="button" class="main-btn" id="reset-btn">Reset</button>
+
+    </div>
+
+    <script src="main.js"></script>
+    
+  </body>
+</html>
